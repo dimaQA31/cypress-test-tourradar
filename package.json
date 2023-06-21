@@ -1,0 +1,20 @@
+{
+  "name": "cypress-basiuk-dmytro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx cypress run --e2e --headless",
+    "test-headed": "npx cypress run --e2e --headed",
+    "report-merge": "npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json",
+    "report-generate": "npx marge mochawesome.json"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "cypress": "^12.15.0",
+    "typescript": "^4.8.4",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

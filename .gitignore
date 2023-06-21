@@ -1,0 +1,9 @@
+.idea
+.cache
+/cypress/node_modules/
+/cypress/screenshots
+/cypress/results/
+/cypress/mochawesome-report/
+mochawesome.json
+package-lock.json
+yarn.lock
